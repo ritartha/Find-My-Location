@@ -1,12 +1,12 @@
 import requests
 import json
 #!pip3 install folium
-#!pip3 install geopandas
 #!pip3 install matplotlib
-#!pip3 install mapclassify
+
 import folium
+import os
 from bs4 import BeautifulSoup
-import geopandas
+#import geopandas
 from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -37,5 +37,7 @@ def index():
 def map():
     return render_template('map.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)    
+if __name__=="__main__":
+    app.run(host=os.getenv('IP', '0.0.0.0'), 
+            port=int(os.getenv('PORT', 4444)))
+ 
