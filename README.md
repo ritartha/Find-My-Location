@@ -36,5 +36,5 @@ python3 run.py
 ```
 <h3>4. Use the Url http://192.168.2.6:4444/ in any browser</h3>
 
-<img src='[https://i.im.ge/2022/07/22/FqrmaK.png](https://github.com/ritartha/Find-My-Location/blob/main/FqrmaK.png)'>
+<img alt='png' src='https://github.com/ritartha/Find-My-Location/blob/main/FqrmaK.png'>
 
